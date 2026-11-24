@@ -239,7 +239,7 @@ body.is-loading {
 }
 
 .page {
-  min-height: 70vh;
+  min-height: 0;
 }
 
 .page[hidden] {
@@ -320,7 +320,7 @@ body.is-loading {
   min-width: 0;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
-  padding: 28px 5vw;
+  padding: 20px 5vw;
   background: var(--beige);
   text-align: center;
 }
@@ -339,7 +339,7 @@ body.is-loading {
 
 .section {
   width: 100%;
-  padding: 75px var(--content-gutter);
+  padding: clamp(48px, 5vw, 64px) var(--content-gutter);
 }
 
 .section.dark {
@@ -412,7 +412,7 @@ body.is-loading {
 
 .pageintro {
   width: 100%;
-  padding: 70px var(--content-gutter) 35px;
+  padding: clamp(48px, 5vw, 64px) var(--content-gutter) clamp(24px, 3vw, 32px);
   background: var(--beige);
 }
 
@@ -561,7 +561,7 @@ body.is-loading {
   grid-template-columns: 2fr 1fr 1fr;
   align-items: start;
   gap: 30px;
-  padding: 50px var(--content-gutter);
+  padding: 40px var(--content-gutter);
   color: var(--cream);
   background: var(--dark-deep);
 }
@@ -995,7 +995,7 @@ select:focus-visible {
 }
 
 .map-section {
-  margin-top: clamp(52px, 8vw, 100px);
+  margin-top: clamp(32px, 5vw, 64px);
 }
 
 .map-heading {
